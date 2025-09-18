@@ -344,4 +344,14 @@ body {
     inset: 0;
     background: transparent;
     pointer-events: none;
+
+}
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200%;   /* expand back so scroll works */
+    height: 200%;
+    overflow: auto;
+  }
 }
