@@ -6,6 +6,13 @@ const registerLink = document.querySelector('.SignUpLink');
 if (registerLink) registerLink.addEventListener('click', (e)=>{ e.preventDefault(); container.classList.add('active'); });
 if (loginLink) loginLink.addEventListener('click', (e)=>{ e.preventDefault(); container.classList.remove('active'); });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (isMobile) {
+    alert("For best experience, please enable 'Desktop site' in your browser.");
+  }
+});
+
 // Eye toggle for password fields
 function attachEyeToggle(wrapper) {
     const input = wrapper.querySelector('input[type="password"]');
