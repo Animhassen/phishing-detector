@@ -1596,4 +1596,4 @@ def unblock(ip):
 # ----------------------------
 if __name__ == "__main__":
     # host=0.0.0.0 lets other devices on your LAN reach it
-    app.run(debug=True, host="0.0.0.0", port=3000, threaded=True)
+    app.run(debug=True, host="0.0.0.0", port=2000, threaded=True)
